@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krushna Telalwar | Computer Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fira Code for code/tech vibe, Inter for body text -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="matrix"></canvas>
+
+    <header class="header">
+        <nav class="container nav-container">
+            <a href="#" class="logo">&lt;KRUSHNA /&gt;</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Stack</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="theme-toggle" class="theme-btn" title="Switch Mode"><i class="fas fa-sun"></i></button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container hero-content">
+                <img src="assets/me.png" alt="Krushna Telalwar" class="profile-img fade-in">
+                <p class="greeting">Hello, World! I am</p>
+                <h1 class="hero-name glitch" data-text="KRUSHNA TELALWAR">KRUSHNA TELALWAR</h1>
+                <div class="typewriter">
+                    <span id="typing-text"></span><span class="cursor">|</span>
+                </div>
+
+                <div class="social-links fade-in delay-2">
+                    <a href="https://github.com/Krushnatelalwar" target="_blank" class="social-btn" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/krushna-telalwar-26a844380" target="_blank" class="social-btn"
+                        title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.naukri.com/mnj/dashboard" target="_blank" class="social-btn" title="Naukri">
+                        <i class="fas fa-briefcase"></i>
+                    </a>
+                </div>
+
+                <div class="hero-cta fade-in delay-2">
+                    <a href="#contact" class="btn btn-primary">Initialize Contact</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title"><span class="hash">#</span>Profile_Summary</h2>
+                <div class="card about-card fade-in glass-panel data-tilt">
+                    <div class="code-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <p class="console-text">
+                        <span class="prompt">></span> Motivated and detail-oriented engineering student with a strong
+                        foundation in <span class="highlight">programming</span>, <span
+                            class="highlight">problem-solving</span>, and real-world project development.<br>
+                        <span class="prompt">></span> Seeking internship or entry-level opportunities to apply technical
+                        skills and grow professionally.
+                    </p>
+                </div>
+
+                <div class="strengths-container fade-in">
+                    <h3>// Strengths</h3>
+                    <div class="tags">
+                        <span class="tag">Problem-Solving</span>
+                        <span class="tag">Teamwork</span>
+                        <span class="tag">Adaptability</span>
+                        <span class="tag">Continuous Learning</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title"><span class="hash">#</span>System_Status</h2>
+                <div class="grid-2">
+                    <div class="skill-category fade-in glass-panel data-tilt">
+                        <h3><i class="fas fa-code"></i> Languages</h3>
+                        <ul>
+                            <li>C / C++</li>
+                            <li>Java</li>
+                            <li>Python</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category fade-in glass-panel data-tilt">
+                        <h3><i class="fas fa-globe"></i> Web Tech</h3>
+                        <ul>
+                            <li>HTML5 / CSS3</li>
+                            <li>React.js</li>
+                            <li>Node.js</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category fade-in glass-panel data-tilt">
+                        <h3><i class="fas fa-tools"></i> Tools</h3>
+                        <ul>
+                            <li>Git / GitHub</li>
+                            <li>VS Code</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category fade-in glass-panel data-tilt">
+                        <h3><i class="fas fa-database"></i> Database & Core</h3>
+                        <ul>
+                            <li>SQL / MySQL</li>
+                            <li>MongoDB</li>
+                            <li>OOPs</li>
+                            <li>PHP</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title"><span class="hash">#</span>Executed_Projects</h2>
+                <div class="timeline">
+                    <!-- Project 1 -->
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content glass-panel data-tilt">
+                            <span class="date">2023-2024</span>
+                            <h3>Alcohol Detector</h3>
+                            <p class="subtitle">Mini Project</p>
+                            <p>Developed an alcohol detector system. Utilized AI prompts for code optimization and
+                                worked on hardware integration mechanisms.</p>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content glass-panel data-tilt">
+                            <span class="date">2023-2024</span>
+                            <h3>AI for Students</h3>
+                            <p class="subtitle">Participation</p>
+                            <p>Learned to build Generative AI models. Explored AI mechanics and prompt engineering
+                                efficiency. Session conducted by Rahul A of NxtWave.</p>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content glass-panel data-tilt">
+                            <span class="date">2023-2024</span>
+                            <h3>Blockchain</h3>
+                            <p class="subtitle">Beginner Level</p>
+                            <p>Course focused on the fundamentals of blockchain technology and its working mechanisms.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- On Going -->
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content glass-panel data-tilt">
+                            <span class="date">Running...</span>
+                            <h3>Current Projects</h3>
+                            <ul class="project-list">
+                                <li>Library Management System</li>
+                                <li>Online Quiz Application</li>
+                                <li>Student Management System</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section">
+            <div class="container">
+                <h2 class="section-title"><span class="hash">#</span>Education_Log</h2>
+                <div class="grid-3">
+                    <div class="card edu-card fade-in glass-panel data-tilt">
+                        <span class="year">July 2023 - Present</span>
+                        <h3>B. Tech Degree</h3>
+                        <p class="school">Alard College of Engineering and Management</p>
+                        <div class="score-box">CGPA: 8.32</div>
+                    </div>
+                    <div class="card edu-card fade-in glass-panel data-tilt">
+                        <span class="year">July 2023</span>
+                        <h3>11th - 12th Grades</h3>
+                        <p class="school">N.S.Bose Highschool</p>
+                        <div class="score-box">Score: 82.84%</div>
+                    </div>
+                    <div class="card edu-card fade-in glass-panel data-tilt">
+                        <span class="year">June 2021</span>
+                        <h3>10th Grade</h3>
+                        <p class="school">K.V. Nalge Highschool</p>
+                        <div class="score-box">Score: 90.20%</div>
+                    </div>
+                </div>
+
+                <div class="certificates-section fade-in glass-panel data-tilt">
+                    <h3 class="subsection-title">Certificates_acquired</h3>
+                    <ul class="cert-list">
+                        <li>Sustainovation 2025 - Hackathon Delhi (Finalist)</li>
+                        <li>Blockchain for Beginners - Capgemini</li>
+                        <li>AI for Students - NXT WAVE</li>
+                        <li>Basic DevOps tools - Guvi|HCL</li>
+                        <li>IBM SkillsBuild – Large Language Model Basics</li>
+                        <li>IBM SkillsBuild – Mastering the art of prompting</li>
+                        <li>IBM SkillsBuild – Intro to Artificial Intelligence</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <h2 class="section-title"><span class="hash">#</span>Terminate_Session</h2>
+                <div class="grid-2 contact-grid">
+                    <div class="contact-info fade-in">
+                        <div class="contact-item">
+                            <span class="icon"><i class="fas fa-phone-alt"></i></span>
+                            <p>+91 9322242762</p>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon"><i class="fas fa-envelope"></i></span>
+                            <p>krushnatelalwar@gmail.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+                            <p>Pune, Maharashtra</p>
+                        </div>
+
+                        <div class="social-links-footer">
+                            <a href="https://github.com/Krushnatelalwar" target="_blank" class="social-btn"
+                                title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/krushna-telalwar-26a844380" target="_blank"
+                                class="social-btn" title="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://www.naukri.com/mnj/dashboard" target="_blank" class="social-btn"
+                                title="Naukri">
+                                <i class="fas fa-briefcase"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-form-container fade-in glass-panel data-tilt">
+                        <form class="contact-form">
+                            <div class="input-group">
+                                <input type="text" placeholder=" " required>
+                                <label>Name</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="email" placeholder=" " required>
+                                <label>Email</label>
+                            </div>
+                            <div class="input-group">
+                                <textarea placeholder=" " rows="5" required></textarea>
+                                <label>Message</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send_Packet</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p id="copyright">&copy; 2026 Krushna | No Bugs, Only Features</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
